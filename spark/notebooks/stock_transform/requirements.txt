@@ -1,0 +1,3 @@
+# go to stock_transform folder and run the following cmd to have transform image
+# this image will be sent to master by airflow docker operator
+# docker build . -t airflow/stock-app
