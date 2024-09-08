@@ -22,12 +22,26 @@ airflow:
                       }
                     }'
     - conn_id: minio
-      conn_type: minio
+      conn_type: aws
       conn_host: 
       conn_login: minio
       conn_password: minio123
       conn_extra: 
         endpoint_url: http://host.docker.internal:9000 
+    - conn_id: aws
+      conn_type: aws
+      conn_host: 
+      conn_login: minio
+      conn_password: minio123
+      conn_extra: 
+        endpoint_url: http://host.docker.internal:9000 
+    - conn_id: postgres
+      conn_type: postgres
+      conn_host: postgres
+      conn_login: postgres
+      conn_password: postgres
+      conn_port: 5432
+      conn_extra: 
   pools:
     - pool_name:
       pool_slot:
