@@ -46,3 +46,29 @@ Contact
 =======
 
 The Astronomer CLI is maintained with love by the Astronomer team. To report a bug or suggest a change, reach out to our support.
+
+
+**Installation**
+	
+Install docker engine
+https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository
+
+Install docker desktop
+https://docs.docker.com/desktop/install/ubuntu/
+
+Install Astro for airflow
+https://www.astronomer.io/docs/astro/cli/install-cli
+
+Initialize airflow project
+astro dev init
+
+
+may require rebuild master
+go to master folder and run: 
+docker build . -t airflow/spark-worker
+docker build . -t airflow/spark-master
+
+go to worker folder and run:
+docker build . -t airflow/spark-worker
+
+
